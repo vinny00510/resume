@@ -1,26 +1,25 @@
-# Portfólio - Vinicius Alvarez
+# Portfólio Vinicius Alvarez — Layout Dark Academia / Split Screen
 
-Portfólio profissional em HTML, CSS e JavaScript, pronto para publicar no GitHub Pages.
+Esta versão foi refeita em um layout inspirado no portfólio de referência enviado:
 
-## Arquivos
+- tela dividida com painel esquerdo fixo;
+- navegação lateral por seções;
+- visual dark academia;
+- tons de dourado/brass e vinho;
+- tipografia serifada;
+- cards com efeito hover/tilt;
+- texto com efeito cipher no nome;
+- spotlight acompanhando o mouse.
 
-- `index.html`: estrutura do site
-- `style.css`: identidade visual, responsividade e tema claro/escuro
-- `script.js`: menu mobile, filtro de projetos, tema e animações
-- `assets/`: pasta para foto, imagens de projetos e currículo PDF
+## Como usar
 
-## Como publicar no GitHub Pages
+1. Extraia o ZIP.
+2. Suba `index.html`, `style.css`, `script.js` e a pasta `assets` para seu repositório GitHub.
+3. Ative o GitHub Pages em `Settings > Pages`.
 
-1. Crie um repositório no GitHub chamado `portfolio`.
-2. Envie os arquivos deste pacote para o repositório.
-3. Vá em **Settings > Pages**.
-4. Em **Branch**, selecione `main` e pasta `/root`.
-5. Salve.
-6. O site ficará disponível em `https://seuusuario.github.io/portfolio/`.
+## Personalizações recomendadas
 
-## O que editar
-
-- Troque o link do GitHub no `index.html`.
-- Se quiser, adicione sua foto em `assets/foto.jpg` e ajuste o bloco `.profile-avatar`.
-- Se tiver currículo em PDF, coloque em `assets/curriculo.pdf` e adicione um botão no hero.
-- Atualize descrições dos projetos conforme forem ficando prontos.
+- Trocar o link do GitHub no `index.html`.
+- Adicionar sua foto na pasta `assets` se quiser.
+- Adicionar seu currículo como `assets/curriculo.pdf`.
+- Substituir os cards por projetos com prints reais quando tiver imagens.
