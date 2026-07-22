@@ -126,16 +126,6 @@
     }
     @keyframes blink { 50% { opacity: 0; } }
 
-    .cmd-line {
-      font-family: 'Courier Prime', monospace;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      margin-bottom: 1rem;
-      opacity: 0.7;
-    }
-    .cmd-line .prompt { color: var(--cyan); }
-    .cmd-line .path { color: var(--text-muted); }
-
     .hero-role-terminal {
       font-family: 'Courier Prime', monospace;
       font-size: 0.9rem;
@@ -188,9 +178,6 @@
   <div class="layout-container">
     <aside class="left-pane">
       <header>
-        <div class="cmd-line">
-          <span class="prompt">$</span> <span class="path">whoami</span>
-        </div>
         <h1 class="hero-name cipher-text loading" data-value="Vinicius Alvarez">Vinicius Alvarez</h1>
         <div class="hero-role-terminal">
           &gt; Especialista em Automação, IA & Eficiência Operacional<span class="terminal-cursor"></span>
@@ -220,9 +207,6 @@
     <main class="right-pane">
       <section id="about" class="active-section">
         <div class="section-eyebrow">Sobre</div>
-        <div class="cmd-line">
-          <span class="prompt">$</span> <span class="path">cat about.md</span>
-        </div>
         <h2 class="section-title">Soluções de TI com foco em automação, IA e eficiência operacional.</h2>
         <p class="about-text">Sou um profissional de Tecnologia da Informação com mais de <span class="inline-highlight">15 anos de experiência</span> em ambientes corporativos, suporte avançado, governança, gestão de serviços e evolução de processos.</p>
         <p class="about-text">Minha atuação atual combina <span class="inline-highlight">análise de processos, Python, Power Platform, Microsoft 365 e Inteligência Artificial</span> para reduzir esforço manual, melhorar fluxos e entregar soluções práticas para o negócio.</p>
@@ -231,9 +215,6 @@
 
       <section id="experience">
         <div class="section-eyebrow">Experiência</div>
-        <div class="cmd-line">
-          <span class="prompt">$</span> <span class="path">experience --compact</span>
-        </div>
         <h2 class="section-title">Experiência profissional</h2>
         <div class="timeline-item">
           <div class="timeline-date">2025 — Atual</div>
@@ -279,9 +260,6 @@
 
       <section id="projects">
         <div class="section-eyebrow">Projetos</div>
-        <div class="cmd-line">
-          <span class="prompt">$</span> <span class="path">projects --highlight</span>
-        </div>
         <h2 class="section-title">Projetos selecionados</h2>
         <a class="tilt-card" href="#">
           <div class="project-status-line"><span class="status-dot"></span>STATUS: PRODUCAO_ATIVA</div>
@@ -315,9 +293,6 @@
 
       <section id="skills">
         <div class="section-eyebrow">Skills</div>
-        <div class="cmd-line">
-          <span class="prompt">$</span> <span class="path">skills --list --focus=ia,automacao</span>
-        </div>
         <h2 class="section-title">Competências</h2>
 
         <div class="skill-group">
@@ -371,9 +346,6 @@
 
       <section id="education">
         <div class="section-eyebrow">Formação</div>
-        <div class="cmd-line">
-          <span class="prompt">$</span> <span class="path">credentials --show</span>
-        </div>
         <h2 class="section-title">Formação e certificações</h2>
         <a class="tilt-card" href="#">
           <div class="card-topline">Estácio — Em andamento</div>
@@ -396,9 +368,6 @@
 
       <section id="contact">
         <div class="section-eyebrow">Contato</div>
-        <div class="cmd-line">
-          <span class="prompt">$</span> <span class="path">./init_conversation.sh</span>
-        </div>
         <h2 class="section-title">Vamos conversar?</h2>
         <div class="contact-box">
           <p>Estou aberto a networking, parcerias, oportunidades e conversas sobre automação, IA aplicada, Power Platform e melhoria de processos.</p>
