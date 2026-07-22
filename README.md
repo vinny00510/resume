@@ -1,5 +1,3 @@
-# Portfólio Vinicius Alvarez — Layout Dark Academia / Split Screen
-
 Esta versão foi refeita em um layout inspirado no portfólio de referência enviado:
 
 - tela dividida com painel esquerdo fixo;
