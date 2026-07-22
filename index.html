@@ -113,16 +113,90 @@
     .contact-box p{color:var(--text-muted);margin-bottom:1.25rem}
     .contact-actions{display:flex;flex-wrap:wrap;gap:.75rem}
     @media(max-width:640px){.timeline-item{grid-template-columns:1fr;gap:.4rem}.hero-name{font-size:2.6rem}.layout-container{padding:0 1.1rem}}
+
+    /* ===== TERMINAL STYLE ADDITIONS ===== */
+    .terminal-cursor {
+      display: inline-block;
+      width: 8px;
+      height: 1em;
+      background: var(--cyan);
+      animation: blink 1s step-end infinite;
+      vertical-align: text-bottom;
+      margin-left: 4px;
+    }
+    @keyframes blink { 50% { opacity: 0; } }
+
+    .cmd-line {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      opacity: 0.7;
+    }
+    .cmd-line .prompt { color: var(--cyan); }
+    .cmd-line .path { color: var(--text-muted); }
+
+    .hero-role-terminal {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.9rem;
+      color: var(--cyan);
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-category {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .skill-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .skill-pill.ai-focus {
+      background: rgba(207, 168, 88, 0.18);
+      border-color: rgba(207, 168, 88, 0.45);
+      color: #e8e4dc;
+    }
+
+    .status-dot {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: var(--cyan);
+      border-radius: 50%;
+      margin-right: 6px;
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+    .project-status-line {
+      font-family: 'Courier Prime', monospace;
+      font-size: 0.7rem;
+      color: var(--cyan);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
   <div class="layout-container">
     <aside class="left-pane">
       <header>
+        <div class="cmd-line">
+          <span class="prompt">$</span> <span class="path">whoami</span>
+        </div>
         <h1 class="hero-name cipher-text loading" data-value="Vinicius Alvarez">Vinicius Alvarez</h1>
-        <div class="hero-role">Analista de Projetos Pleno</div>
+        <div class="hero-role-terminal">
+          &gt; Especialista em Automação, IA & Eficiência Operacional<span class="terminal-cursor"></span>
+        </div>
         <p class="hero-desc">
-          Profissional de TI, automação e IA aplicada ao negócio. Crio soluções práticas com Python, Power Platform, Microsoft 365 e análise de processos.
+          Profissional de TI com <strong style="color:var(--text-main)">15+ anos</strong> de experiência. Transformo operações manuais em fluxos inteligentes com <strong style="color:var(--text-main)">Python, Power Platform, M365 e IA Generativa</strong>.
         </p>
         <nav class="nav-links">
           <a class="nav-item active" data-target="about">Sobre</a>
@@ -136,16 +210,19 @@
       <footer>
         <div class="social-links">
           <a class="social-icon" href="https://www.linkedin.com/in/vinicius-alvarez-591999383/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.35 8.1h4.3V23H.35V8.1zM8.1 8.1h4.1v2.04h.06c.57-1.08 1.98-2.22 4.08-2.22 4.36 0 5.16 2.87 5.16 6.6V23h-4.28v-7.53c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.88 1.95-2.88 3.96V23H8.1V8.1z"/></svg></a>
-          <a class="social-icon" href="mailto:vinicius.allvarez@gmail.com" aria-label="E-mail"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg></a>
-          <a class="social-icon" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.82-.26.82-.58v-2.04c-3.34.73-4.04-1.6-4.04-1.6-.55-1.38-1.34-1.75-1.34-1.75-1.1-.75.08-.74.08-.74 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.82 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.66-.31-5.46-1.34-5.46-5.94 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.53.12-3.17 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0C17.3 4.68 18.31 5 18.31 5c.66 1.64.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.21.7.83.58A12 12 0 0 0 12 .5z"/></svg></a>
+          <a class="social-icon" href="mailto:vinny00510@gmail.com" aria-label="E-mail"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg></a>
+          <a class="social-icon" href="https://github.com/vinny00510" target="_blank" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5A12 12 0 0 0 8.2 23.9c.6.1.82-.26.82-.58v-2.04c-3.34.73-4.04-1.6-4.04-1.6-.55-1.38-1.34-1.75-1.34-1.75-1.1-.75.08-.74.08-.74 1.2.09 1.84 1.24 1.84 1.24 1.08 1.84 2.82 1.3 3.5 1 .11-.78.42-1.3.76-1.6-2.66-.31-5.46-1.34-5.46-5.94 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.53.12-3.17 0 0 1.01-.32 3.3 1.23a11.4 11.4 0 0 1 6 0C17.3 4.68 18.31 5 18.31 5c.66 1.64.24 2.87.12 3.17.77.84 1.24 1.91 1.24 3.22 0 4.62-2.8 5.62-5.48 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.21.7.83.58A12 12 0 0 0 12 .5z"/></svg></a>
         </div>
-        <a class="btn-primary" href="mailto:vinicius.allvarez@gmail.com?subject=Contato%20via%20Portfolio">Contato</a>
+        <a class="btn-primary" href="mailto:vinny00510@gmail.com?subject=Contato%20via%20Portfolio">Contato</a>
       </footer>
     </aside>
 
     <main class="right-pane">
       <section id="about" class="active-section">
         <div class="section-eyebrow">Sobre</div>
+        <div class="cmd-line">
+          <span class="prompt">$</span> <span class="path">cat about.md</span>
+        </div>
         <h2 class="section-title">Soluções de TI com foco em automação, IA e eficiência operacional.</h2>
         <p class="about-text">Sou um profissional de Tecnologia da Informação com mais de <span class="inline-highlight">15 anos de experiência</span> em ambientes corporativos, suporte avançado, governança, gestão de serviços e evolução de processos.</p>
         <p class="about-text">Minha atuação atual combina <span class="inline-highlight">análise de processos, Python, Power Platform, Microsoft 365 e Inteligência Artificial</span> para reduzir esforço manual, melhorar fluxos e entregar soluções práticas para o negócio.</p>
@@ -154,36 +231,160 @@
 
       <section id="experience">
         <div class="section-eyebrow">Experiência</div>
+        <div class="cmd-line">
+          <span class="prompt">$</span> <span class="path">experience --compact</span>
+        </div>
         <h2 class="section-title">Experiência profissional</h2>
-        <div class="timeline-item"><div class="timeline-date">2025 — Atual</div><div class="timeline-content"><h3>Computécnica Tecnologia</h3><div class="role">Analista de Projetos Pleno</div><p>Sustentação operacional, governança de serviços, gestão de fornecedores, SLAs, demandas críticas, automações e melhorias de processos.</p></div></div>
-        <div class="timeline-item"><div class="timeline-date">2018 — 2024</div><div class="timeline-content"><h3>Intolabs</h3><div class="role">Analista de Processos Pleno</div><p>Suporte N1/N2, gestão e priorização de chamados, interface com desenvolvimento e infraestrutura, relatórios operacionais para diretoria.</p></div></div>
-        <div class="timeline-item"><div class="timeline-date">2016 — 2017</div><div class="timeline-content"><h3>Advancis Software & Services</h3><div class="role">Analista de Sistemas</div><p>Implantação de sistemas, configuração, testes, treinamento de usuários, acompanhamento pós-implantação e coordenação de analistas.</p></div></div>
-        <div class="timeline-item"><div class="timeline-date">2014 — 2015</div><div class="timeline-content"><h3>T-Systems do Brasil</h3><div class="role">Analista de Suporte de Sistemas</div><p>Suporte técnico N1/N2, atendimento presencial e remoto, manutenção de equipamentos, softwares, rede e serviços corporativos.</p></div></div>
-        <div class="timeline-item"><div class="timeline-date">2011 — 2013</div><div class="timeline-content"><h3>Itaú Unibanco</h3><div class="role">Analista de Suporte Sênior</div><p>Atendimento presencial, suporte VIP para diretoria e alta gestão, gestão de SLA e resolução de incidentes críticos.</p></div></div>
+        <div class="timeline-item">
+          <div class="timeline-date">2025 — Atual</div>
+          <div class="timeline-content">
+            <h3>Computécnica Tecnologia</h3>
+            <div class="role">Analista de Projetos Pleno</div>
+            <p>Governança, SLAs, automações e melhorias de processos.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2018 — 2024</div>
+          <div class="timeline-content">
+            <h3>Intolabs</h3>
+            <div class="role">Analista de Processos Pleno</div>
+            <p>Gestão de chamados, relatórios para diretoria e otimização de fluxos.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2016 — 2017</div>
+          <div class="timeline-content">
+            <h3>Advancis Software & Services</h3>
+            <div class="role">Analista de Sistemas</div>
+            <p>Implantação, testes, treinamento e coordenação de equipe.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2014 — 2015</div>
+          <div class="timeline-content">
+            <h3>T-Systems do Brasil</h3>
+            <div class="role">Analista de Suporte de Sistemas</div>
+            <p>Suporte N1/N2, atendimento e manutenção de infra.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-date">2011 — 2013</div>
+          <div class="timeline-content">
+            <h3>Itaú Unibanco</h3>
+            <div class="role">Analista de Suporte Sênior</div>
+            <p>Suporte VIP, gestão de SLA e incidentes críticos.</p>
+          </div>
+        </div>
       </section>
 
       <section id="projects">
         <div class="section-eyebrow">Projetos</div>
+        <div class="cmd-line">
+          <span class="prompt">$</span> <span class="path">projects --highlight</span>
+        </div>
         <h2 class="section-title">Projetos selecionados</h2>
-        <a class="tilt-card" href="#"><div class="card-topline">Python • OCR • PDF • Excel</div><h3 class="card-title">Renomear Notas Fiscais</h3><p class="card-text">Automação para processar PDFs, identificar tipo de documento, extrair informações, renomear arquivos, mover para pastas corretas e atualizar planilhas.</p><div class="tag-row"><span class="tag">Python</span><span class="tag">OCR</span><span class="tag">PDF</span><span class="tag">Excel</span></div></a>
-        <a class="tilt-card" href="#"><div class="card-topline">Power Platform • M365 • Processos</div><h3 class="card-title">Fluxos Inteligentes com Copilot Studio</h3><p class="card-text">Construção de agentes e fluxos para leitura de e-mails, integração com Outlook/Microsoft 365 e retorno de informações úteis com payload otimizado.</p><div class="tag-row"><span class="tag">Copilot Studio</span><span class="tag">Power Automate</span><span class="tag">M365</span></div></a>
-        <a class="tilt-card" href="#"><div class="card-topline">Power BI • SharePoint • Gestão</div><h3 class="card-title">Dashboards e Relatórios Executivos</h3><p class="card-text">Indicadores operacionais, relatórios gerenciais e painéis para acompanhamento de dados, chamados, processos e performance.</p><div class="tag-row"><span class="tag">Power BI</span><span class="tag">SharePoint</span><span class="tag">Excel</span></div></a>
-        <a class="tilt-card" href="#"><div class="card-topline">IA • Visão Computacional • Produto</div><h3 class="card-title">Inteligent Vision</h3><p class="card-text">Conceito de plataforma para monitoramento de vagas, veículos e ativos usando visão computacional, IA e automação aplicada a operações reais.</p><div class="tag-row"><span class="tag">YOLO</span><span class="tag">Python</span><span class="tag">IA</span></div></a>
+        <a class="tilt-card" href="#">
+          <div class="project-status-line"><span class="status-dot"></span>STATUS: PRODUCAO_ATIVA</div>
+          <div class="card-topline">Python • OCR • PDF • Excel</div>
+          <h3 class="card-title">Renomear Notas Fiscais</h3>
+          <p class="card-text">Automação end-to-end que processa PDFs via OCR, extrai dados estruturados, renomeia arquivos, organiza em pastas e atualiza planilhas de controle automaticamente.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">OCR</span><span class="tag">PDF</span><span class="tag">Excel</span></div>
+        </a>
+        <a class="tilt-card" href="#">
+          <div class="project-status-line"><span class="status-dot"></span>STATUS: PRODUCAO_ATIVA</div>
+          <div class="card-topline">Power Platform • M365 • Processos</div>
+          <h3 class="card-title">Fluxos Inteligentes com Copilot Studio</h3>
+          <p class="card-text">Agentes de IA no Copilot Studio para leitura inteligente de e-mails, integração com Outlook/Microsoft 365 e retorno de informações acionáveis em tempo real.</p>
+          <div class="tag-row"><span class="tag">Copilot Studio</span><span class="tag">Power Automate</span><span class="tag">M365</span></div>
+        </a>
+        <a class="tilt-card" href="#">
+          <div class="project-status-line"><span class="status-dot"></span>STATUS: PRODUCAO_ATIVA</div>
+          <div class="card-topline">Power BI • SharePoint • Gestão</div>
+          <h3 class="card-title">Dashboards e Relatórios Executivos</h3>
+          <p class="card-text">Painéis interativos e relatórios gerenciais conectados a SharePoint. Indicadores de chamados, processos, performance e SLA em tempo real.</p>
+          <div class="tag-row"><span class="tag">Power BI</span><span class="tag">SharePoint</span><span class="tag">Excel</span></div>
+        </a>
+        <a class="tilt-card" href="#">
+          <div class="project-status-line"><span class="status-dot"></span>STATUS: EM_DESENVOLVIMENTO</div>
+          <div class="card-topline">IA • Visão Computacional • Produto</div>
+          <h3 class="card-title">Intelligent Vision</h3>
+          <p class="card-text">Plataforma de monitoramento inteligente usando visão computacional e IA para detecção de vagas, veículos e ativos com YOLO e modelos de ML.</p>
+          <div class="tag-row"><span class="tag">YOLO</span><span class="tag">Python</span><span class="tag">IA</span></div>
+        </a>
       </section>
 
       <section id="skills">
         <div class="section-eyebrow">Skills</div>
+        <div class="cmd-line">
+          <span class="prompt">$</span> <span class="path">skills --list --focus=ia,automacao</span>
+        </div>
         <h2 class="section-title">Competências</h2>
-        <div class="skills-grid">
-          <span class="skill-pill">Python</span><span class="skill-pill">Power Automate</span><span class="skill-pill">Power Apps</span><span class="skill-pill">Power BI</span><span class="skill-pill">SharePoint</span><span class="skill-pill">Microsoft 365</span><span class="skill-pill">Copilot Studio</span><span class="skill-pill">OCR</span><span class="skill-pill">IA Generativa</span><span class="skill-pill">Prompt Engineering</span><span class="skill-pill">Machine Learning</span><span class="skill-pill">Governança de TI</span><span class="skill-pill">Fornecedores</span><span class="skill-pill">SLA</span><span class="skill-pill">Suporte N3</span><span class="skill-pill">Processos</span>
+
+        <div class="skill-group">
+          <span class="skill-category">// Inteligência Artificial & Automação</span>
+          <div class="skills-grid">
+            <span class="skill-pill ai-focus">IA Generativa</span>
+            <span class="skill-pill ai-focus">Prompt Engineering</span>
+            <span class="skill-pill ai-focus">LLMs (GPT/Claude)</span>
+            <span class="skill-pill ai-focus">Machine Learning</span>
+            <span class="skill-pill ai-focus">Visão Computacional</span>
+            <span class="skill-pill ai-focus">YOLO</span>
+            <span class="skill-pill ai-focus">RAG</span>
+            <span class="skill-pill ai-focus">Copilot Studio</span>
+            <span class="skill-pill ai-focus">Power Automate</span>
+            <span class="skill-pill ai-focus">Power Apps</span>
+            <span class="skill-pill ai-focus">RPA</span>
+            <span class="skill-pill ai-focus">Fluxos Inteligentes</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span class="skill-category">// Desenvolvimento & Dados</span>
+          <div class="skills-grid">
+            <span class="skill-pill">Python</span>
+            <span class="skill-pill">OCR / Tesseract</span>
+            <span class="skill-pill">PDF Processing</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">OpenCV</span>
+            <span class="skill-pill">APIs REST</span>
+            <span class="skill-pill">Power BI</span>
+            <span class="skill-pill">SharePoint</span>
+            <span class="skill-pill">Microsoft 365</span>
+            <span class="skill-pill">Excel Avançado</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <span class="skill-category">// Governança & Operações</span>
+          <div class="skills-grid">
+            <span class="skill-pill">Governança de TI</span>
+            <span class="skill-pill">ITIL</span>
+            <span class="skill-pill">Gestão de SLA</span>
+            <span class="skill-pill">Fornecedores</span>
+            <span class="skill-pill">Suporte N3</span>
+            <span class="skill-pill">Processos</span>
+            <span class="skill-pill">Scrum</span>
+            <span class="skill-pill">Kanban</span>
+          </div>
         </div>
       </section>
 
       <section id="education">
         <div class="section-eyebrow">Formação</div>
+        <div class="cmd-line">
+          <span class="prompt">$</span> <span class="path">credentials --show</span>
+        </div>
         <h2 class="section-title">Formação e certificações</h2>
-        <a class="tilt-card" href="#"><div class="card-topline">Estácio</div><h3 class="card-title">Tecnologia em Inteligência Artificial</h3><p class="card-text">Formação em andamento voltada a IA, dados, automação inteligente e tecnologias emergentes.</p></a>
-        <a class="tilt-card" href="#"><div class="card-topline">UNIP</div><h3 class="card-title">Análise e Desenvolvimento de Sistemas</h3><p class="card-text">Base acadêmica em desenvolvimento, sistemas, lógica e tecnologia.</p></a>
+        <a class="tilt-card" href="#">
+          <div class="card-topline">Estácio — Em andamento</div>
+          <h3 class="card-title">Tecnologia em Inteligência Artificial</h3>
+          <p class="card-text">Formação voltada a IA, dados, automação inteligente e tecnologias emergentes.</p>
+        </a>
+        <a class="tilt-card" href="#">
+          <div class="card-topline">UNIP — Concluído</div>
+          <h3 class="card-title">Análise e Desenvolvimento de Sistemas</h3>
+          <p class="card-text">Base acadêmica em desenvolvimento, sistemas, lógica e tecnologia.</p>
+        </a>
         <div style="margin-top:1rem">
           <span class="cert-link">ITIL® v3 Foundation</span>
           <span class="cert-link">Scrum Foundations</span>
@@ -195,11 +396,14 @@
 
       <section id="contact">
         <div class="section-eyebrow">Contato</div>
+        <div class="cmd-line">
+          <span class="prompt">$</span> <span class="path">./init_conversation.sh</span>
+        </div>
         <h2 class="section-title">Vamos conversar?</h2>
         <div class="contact-box">
           <p>Estou aberto a networking, parcerias, oportunidades e conversas sobre automação, IA aplicada, Power Platform e melhoria de processos.</p>
           <div class="contact-actions">
-            <a class="btn-secondary" href="mailto:vinicius.allvarez@gmail.com">E-mail</a>
+            <a class="btn-secondary" href="mailto:vinny00510@gmail.com">E-mail</a>
             <a class="btn-secondary" href="https://www.linkedin.com/in/vinicius-alvarez-591999383/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
