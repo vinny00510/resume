@@ -1,16 +1,4 @@
-# Vinicius Alvarez Currículo - Single Page
+# Vinicius Universo V3
+Projeto original em tela única, com sistema solar central, planetas clicáveis e painel lateral. Todos os arquivos ficam na raiz.
 
-Projeto em tela única com sistema solar interativo. Todos os arquivos ficam na raiz.
-
-## Arquivos
-- index.html
-- style.css
-- app.js
-- data.js
-- README.md
-
-## Personalização
-Edite `data.js` para alterar experiências, habilidades, projetos, formação, certificações e contatos.
-
-## Publicação
-Envie os cinco arquivos para a raiz do repositório GitHub Pages, substituindo os anteriores. O `index.html` já aponta para `style.css`, `data.js` e `app.js` na raiz.
+Envie `index.html`, `style.css`, `app.js`, `data.js` e `README.md` para a raiz do repositório. Edite somente `data.js` para atualizar o currículo.
