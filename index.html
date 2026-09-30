@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículo interativo de Vinicius Alvarez, especialista em automação, inteligência artificial e eficiência operacional.">
+  <meta name="theme-color" content="#030712">
+  <title>Vinicius Alvarez Currículo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="nebula" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir para o início">
+      <span class="brand-dot"></span>
+      Vinicius Alvarez Currículo
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">☰</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="#universo">Universo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PORTFÓLIO INTERATIVO • AUTOMAÇÃO • IA</p>
+        <h1>Vinicius <span>Alvarez</span></h1>
+        <h2>Especialista em Automação, IA e Eficiência Operacional</h2>
+        <p class="hero-text">Profissional de Tecnologia da Informação com mais de 15 anos de experiência, criando soluções práticas com Python, Power Platform, Microsoft 365 e Inteligência Artificial.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#universo">Explorar universo</a>
+          <a class="button button-secondary" href="mailto:vinny00510@gmail.com?subject=Contato%20via%20portfolio">Entrar em contato</a>
+        </div>
+        <div class="hero-links" aria-label="Links profissionais">
+          <a href="https://github.com/vinny00510" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/vinicius-alvarez-591999383/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="astronaut-card">
+          <span class="signal"></span>
+          <p>SISTEMAS ONLINE</p>
+          <strong>Transformando processos em soluções inteligentes.</strong>
+          <div class="code-lines"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="universo" class="universe-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">NAVEGAÇÃO ORBITAL</p>
+        <h2>Explore meu universo profissional</h2>
+        <p>Clique em um planeta para acessar cada área do currículo.</p>
+      </div>
+
+      <div class="solar-wrap reveal">
+        <div class="solar-system" aria-label="Sistema solar de navegação">
+          <button class="sun celestial" type="button" data-target="sobre" aria-label="Abrir seção Sobre">
+            <span class="sun-core"></span><b>Sobre</b>
+          </button>
+          <div class="orbit orbit-1"><button class="planet mercury" type="button" data-target="experiencia" aria-label="Abrir Experiência"><b>Experiência</b></button></div>
+          <div class="orbit orbit-2"><button class="planet venus" type="button" data-target="habilidades" aria-label="Abrir Habilidades"><b>Skills</b></button></div>
+          <div class="orbit orbit-3"><button class="planet earth" type="button" data-target="projetos" aria-label="Abrir Projetos"><span class="moon"></span><b>Projetos</b></button></div>
+          <div class="orbit orbit-4"><button class="planet mars" type="button" data-target="formacao" aria-label="Abrir Formação"><b>Formação</b></button></div>
+          <div class="orbit orbit-5"><button class="planet jupiter" type="button" data-target="certificacoes" aria-label="Abrir Certificações"><b>Certificações</b></button></div>
+          <div class="orbit orbit-6"><button class="planet saturn" type="button" data-target="contato" aria-label="Abrir Contato"><span class="ring"></span><b>Contato</b></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="content-section section-shell reveal">
+      <div class="section-index">01</div>
+      <div class="section-heading"><p class="eyebrow">SOBRE MIM</p><h2>Tecnologia aplicada a problemas reais</h2></div>
+      <div class="glass-grid two-columns">
+        <article class="glass-card large-card">
+          <p>Sou um profissional de Tecnologia da Informação com mais de <strong>15 anos de experiência</strong> em ambientes corporativos, suporte avançado, governança, gestão de serviços e evolução de processos.</p>
+          <p>Minha atuação combina <strong>análise de processos, Python, Power Platform, Microsoft 365 e Inteligência Artificial</strong> para reduzir esforço manual, organizar informações e entregar soluções práticas para o negócio.</p>
+          <p>Tenho perfil analítico, visão de melhoria contínua e facilidade para transformar operações manuais em ferramentas simples, documentadas e escaláveis.</p>
+        </article>
+        <aside class="glass-card stats-card">
+          <div><strong>15+</strong><span>anos em TI</span></div>
+          <div><strong>IA</strong><span>aplicada a processos</span></div>
+          <div><strong>Python</strong><span>automações reais</span></div>
+          <div><strong>M365</strong><span>ecossistema corporativo</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="experiencia" class="content-section section-shell reveal">
+      <div class="section-index">02</div>
+      <div class="section-heading"><p class="eyebrow">TRAJETÓRIA</p><h2>Experiência profissional</h2></div>
+      <div id="experience-list" class="timeline"></div>
+    </section>
+
+    <section id="habilidades" class="content-section section-shell reveal">
+      <div class="section-index">03</div>
+      <div class="section-heading"><p class="eyebrow">TECNOLOGIAS</p><h2>Competências</h2></div>
+      <div id="skills-list" class="skills-groups"></div>
+    </section>
+
+    <section id="projetos" class="content-section section-shell reveal">
+      <div class="section-index">04</div>
+      <div class="section-heading"><p class="eyebrow">MISSÕES</p><h2>Projetos selecionados</h2><p>Para incluir um novo projeto, edite apenas o arquivo <code>data.js</code>.</p></div>
+      <div id="projects-list" class="projects-grid"></div>
+    </section>
+
+    <section id="formacao" class="content-section section-shell reveal">
+      <div class="section-index">05</div>
+      <div class="section-heading"><p class="eyebrow">FORMAÇÃO</p><h2>Base acadêmica</h2></div>
+      <div id="education-list" class="glass-grid two-columns"></div>
+    </section>
+
+    <section id="certificacoes" class="content-section section-shell reveal">
+      <div class="section-index">06</div>
+      <div class="section-heading"><p class="eyebrow">CERTIFICAÇÕES</p><h2>Aprendizado contínuo</h2></div>
+      <div id="certifications-list" class="tag-cloud"></div>
+    </section>
+
+    <section id="contato" class="contact-section section-shell reveal">
+      <div class="contact-card">
+        <p class="eyebrow">CONTATO</p>
+        <h2>Vamos construir algo inteligente?</h2>
+        <p>Estou aberto a networking, parcerias e oportunidades relacionadas a automação, IA aplicada, Power Platform e melhoria de processos.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:vinny00510@gmail.com?subject=Contato%20via%20portfolio">Enviar e-mail</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/vinicius-alvarez-591999383/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="button button-secondary" href="https://github.com/vinny00510" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Vinicius Alvarez Currículo • Desenvolvido como uma experiência espacial interativa.</p></footer>
+  <button id="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

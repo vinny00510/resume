@@ -4,13 +4,12 @@ Portfolio espacial interativo, responsivo e pronto para GitHub Pages.
 
 ## Estrutura
 - `index.html`: estrutura do site.
-- `css/style.css`: visual, responsividade, planetas e animacoes.
-- `js/data.js`: experiencias, habilidades, projetos, formacao e certificacoes.
-- `js/app.js`: renderizacao, navegacao, estrelas e interacoes.
-- `assets/`: coloque aqui imagens e o PDF do curriculo, se desejar.
+- `style.css`: visual, responsividade, planetas e animacoes.
+- `data.js`: experiencias, habilidades, projetos, formacao e certificacoes.
+- `app.js`: renderizacao, navegacao, estrelas e interacoes.
 
 ## Como personalizar
-Edite `js/data.js`. Para incluir um projeto, copie um objeto dentro de `projects`:
+Edite `data.js`. Para incluir um projeto, copie um objeto dentro de `projects`:
 
 ```js
 {
@@ -30,4 +29,15 @@ Edite `js/data.js`. Para incluir um projeto, copie um objeto dentro de `projects
 6. O endereco publicado sera o mesmo GitHub Pages do repositorio.
 
 ## Observacao
-Revise datas, cargos, formacao e certificacoes em `js/data.js` antes da publicacao.
+Revise datas, cargos, formacao e certificacoes em `data.js` antes da publicacao.
+
+## Estrutura sem pastas
+Todos os arquivos ficam diretamente na raiz do repositorio:
+
+```text
+index.html
+style.css
+app.js
+data.js
+README.md
+```
