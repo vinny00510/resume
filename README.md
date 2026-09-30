@@ -1,4 +1,2 @@
-# Vinicius Universo V3
-Projeto original em tela única, com sistema solar central, planetas clicáveis e painel lateral. Todos os arquivos ficam na raiz.
-
-Envie `index.html`, `style.css`, `app.js`, `data.js` e `README.md` para a raiz do repositório. Edite somente `data.js` para atualizar o currículo.
+# Vinicius Alvarez Currículo V4
+Projeto completo em um único arquivo `index.html`, sem dependências locais, com planetas animados, cliques funcionais, zoom cinematográfico e conteúdo em tela cheia.
