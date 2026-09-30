@@ -1,6 +1,149 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vinicius Alvarez Currículo</title><style>
-:root{--bg:#020611;--line:rgba(137,177,235,.17);--text:#f5f8ff;--muted:#94a0b5;--cyan:#68e7ff}*{box-sizing:border-box;margin:0;padding:0}html,body{width:100%;height:100%;overflow:hidden}body{background:radial-gradient(circle,#0a1934,#020611 60%,#01030a);color:var(--text);font:14px Arial,sans-serif}button,a{font:inherit;color:inherit}button{cursor:pointer}canvas{position:fixed;inset:0;z-index:-2}header{position:fixed;z-index:20;inset:0 0 auto;height:68px;padding:0 22px;display:flex;align-items:center;justify-content:space-between;background:linear-gradient(#020611,transparent)}header strong{display:block;font-size:16px}header small{color:var(--muted);font-size:10px;letter-spacing:.12em}header a{padding:10px 15px;border:1px solid var(--line);border-radius:99px;text-decoration:none}.stage{width:100%;height:100%;display:grid;place-items:center}.solar{position:relative;width:min(78vh,780px);aspect-ratio:1;transition:.8s}.orbit{position:absolute;left:50%;top:50%;border:1px solid var(--line);border-radius:50%;transform:translate(-50%,-50%);animation:spin linear infinite}.o1{width:24%;height:24%;animation-duration:14s}.o2{width:36%;height:36%;animation-duration:21s;animation-direction:reverse}.o3{width:49%;height:49%;animation-duration:30s}.o4{width:62%;height:62%;animation-duration:41s;animation-direction:reverse}.o5{width:76%;height:76%;animation-duration:55s}.o6{width:92%;height:92%;animation-duration:72s;animation-direction:reverse}@keyframes spin{to{transform:translate(-50%,-50%) rotate(360deg)}}.body{position:absolute;border:0}.sun{left:50%;top:50%;width:13%;aspect-ratio:1;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle at 34% 30%,#fffac4,#ffd653 17%,#ff8822 58%,#b82110);box-shadow:0 0 30px #ff9b32,0 0 90px #ff7e1e99;animation:pulse 3s infinite}@keyframes pulse{50%{filter:brightness(1.2);scale:1.05}}.planet{left:50%;top:0;transform:translate(-50%,-50%);border-radius:50%;box-shadow:inset -10px -7px 18px #0009,0 0 18px #5a82d255;animation:counter linear infinite}.o1 .planet{animation-duration:14s}.o2 .planet{animation-duration:21s;animation-direction:reverse}.o3 .planet{animation-duration:30s}.o4 .planet{animation-duration:41s;animation-direction:reverse}.o5 .planet{animation-duration:55s}.o6 .planet{animation-duration:72s;animation-direction:reverse}@keyframes counter{to{transform:translate(-50%,-50%) rotate(-360deg)}}.body:hover{filter:brightness(1.4);scale:1.12}.body span{position:absolute;left:50%;top:calc(100% + 9px);transform:translateX(-50%);white-space:nowrap;background:#01040ddd;border:1px solid var(--line);border-radius:99px;padding:4px 8px;font-size:10px}.sun span{top:calc(100% + 12px)}.mercury{width:23px;height:23px;background:linear-gradient(135deg,#ddd4c7,#6d655f)}.venus{width:35px;height:35px;background:linear-gradient(135deg,#ffd38a,#9c3e1b)}.earth{width:43px;height:43px;background:radial-gradient(circle at 30% 28%,#a5ebff,#288ed5 30%,#286c43 34%,#155999 62%,#06142e)}.mars{width:32px;height:32px;background:linear-gradient(135deg,#ff9b68,#8c2818)}.jupiter{width:66px;height:66px;background:repeating-linear-gradient(0deg,#c58451 0 6px,#edc08c 6px 12px,#955337 12px 17px)}.saturn{width:51px;height:51px;background:linear-gradient(135deg,#f5d78f,#987144)}.ring{position:absolute;inset:43% -42%;height:8px;border:3px solid #d6bb88;border-radius:50%;transform:rotate(-16deg)}.hint{position:fixed;left:50%;bottom:25px;transform:translateX(-50%);color:var(--muted);font-size:10px;letter-spacing:.12em}body.open .orbit,body.open .planet,body.open .sun{animation-play-state:paused}body.open .solar{transform:scale(2.6);filter:blur(4px);opacity:.16}.modal{position:fixed;z-index:30;inset:0;background:#020611d9;backdrop-filter:blur(12px);opacity:0;pointer-events:none;transform:scale(1.04);transition:.6s .2s}.modal.show{opacity:1;pointer-events:auto;transform:none}.close{position:absolute;left:24px;top:22px;padding:10px 14px;border:1px solid var(--line);border-radius:99px;background:#ffffff08}.inner{width:min(900px,calc(100% - 36px));height:100%;margin:auto;padding:90px 0 50px;overflow:auto}.kick{color:var(--cyan);font-size:11px;letter-spacing:.18em}.inner h1{font-size:clamp(48px,9vw,100px);line-height:.95;margin:10px 0 28px}.content>p{color:var(--muted);font-size:17px;margin-bottom:14px}.cards{display:grid;grid-template-columns:1fr 1fr;gap:10px}.card,.group{padding:17px;border:1px solid var(--line);border-radius:16px;background:#ffffff07}.card small{color:var(--cyan)}.card h3,.group h3{margin:6px 0}.card h4{color:#dce7fa;margin-bottom:5px}.card p{color:var(--muted)}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.tags span{padding:6px 9px;border:1px solid #68e7ff33;border-radius:99px;color:#cbf8ff;font-size:11px}.group{margin-bottom:9px}.links{display:grid;gap:8px}.links a{padding:14px;border:1px solid var(--line);border-radius:14px;text-decoration:none}@media(max-width:700px){header small{display:none}.solar{width:94vw}.jupiter{width:48px;height:48px}.saturn{width:42px;height:42px}.cards{grid-template-columns:1fr}.inner h1{font-size:52px}.hint{width:100%;text-align:center}}
-</style></head><body><canvas id="stars"></canvas><header><div><strong>Vinicius Alvarez</strong><small>AUTOMAÇÃO • IA • POWER PLATFORM</small></div><a href="mailto:vinny00510@gmail.com">Contato</a></header><main class="stage"><div class="solar" id="solar"><button class="sun body" data-id="about"><span>Sobre</span></button><div class="orbit o1"><button class="planet mercury body" data-id="experience"><span>Experiência</span></button></div><div class="orbit o2"><button class="planet venus body" data-id="skills"><span>Skills</span></button></div><div class="orbit o3"><button class="planet earth body" data-id="projects"><span>Projetos</span></button></div><div class="orbit o4"><button class="planet mars body" data-id="education"><span>Formação</span></button></div><div class="orbit o5"><button class="planet jupiter body" data-id="certs"><span>Certificações</span></button></div><div class="orbit o6"><button class="planet saturn body" data-id="contact"><b class="ring"></b><span>Contato</span></button></div></div><p class="hint">CLIQUE NO SOL OU EM UM PLANETA</p></main><section class="modal" id="modal"><button class="close" id="close">← voltar ao sistema</button><div class="inner"><p class="kick" id="kick"></p><h1 id="title"></h1><div class="content" id="content"></div></div></section><script>
-const D={about:{k:'SOL CENTRAL',t:'Vinicius Alvarez',h:'<p>Especialista em Automação, IA e Eficiência Operacional.</p><p>Profissional de TI com mais de 15 anos de experiência em ambientes corporativos, suporte avançado, governança e evolução de processos com Python, Power Platform, Microsoft 365 e Inteligência Artificial.</p>'},experience:{k:'ÓRBITA PROFISSIONAL',t:'Experiência',i:[['2025 • Atual','Computécnica Tecnologia','Analista de Projetos Pleno','Governança, SLAs, automações e melhoria de processos.'],['2018 • 2024','Intolabs','Analista de Processos Pleno','Gestão de chamados, relatórios executivos e otimização de fluxos.'],['2016 • 2017','Advancis','Analista de Sistemas','Implantação, testes, treinamento e coordenação técnica.'],['2014 • 2015','T-Systems','Analista de Suporte','Suporte N1/N2 e infraestrutura.'],['2011 • 2013','Itaú Unibanco','Analista de Suporte Sênior','Suporte VIP, SLA e incidentes críticos.']]},skills:{k:'TECNOLOGIAS',t:'Skills',g:[['IA e Automação',['IA Generativa','Prompt Engineering','LLMs','RAG','Copilot Studio','Power Automate','Power Apps','RPA']],['Desenvolvimento e Dados',['Python','OCR','Pandas','OpenCV','APIs REST','Power BI','SharePoint','Excel']],['Governança',['Microsoft 365','ITIL','Gestão de SLA','Processos','Scrum','Kanban','Suporte N3']]]},projects:{k:'MISSÕES',t:'Projetos',i:[['PRODUÇÃO','Renomear Notas IA','Python • OCR • Excel','Processamento de PDFs, extração, classificação e atualização de controles.'],['PRODUÇÃO','Automação Financeira 23S','Python • Power Automate • M365','Recepção, organização e processamento de documentos financeiros.'],['DESENVOLVIMENTO','MyWalk','React Native • Expo','Aplicativo de caminhada com GPS e narração.'],['DESENVOLVIMENTO','Intelligent Vision','Python • YOLO • OpenCV','Visão computacional para monitoramento inteligente.'],['CONCEITO','23S Estoque','Web • Automação','Controle de estoque com login, alertas e exportação.']]},education:{k:'BASE ACADÊMICA',t:'Formação',i:[['EM ANDAMENTO','Tecnologia em Inteligência Artificial','Estácio','IA, dados e automação inteligente.'],['CONCLUÍDO','Análise e Desenvolvimento de Sistemas','UNIP','Desenvolvimento, lógica e sistemas.']]},certs:{k:'APRENDIZADO CONTÍNUO',t:'Certificações',g:[['Certificações',['ITIL v3 Foundation','Scrum Foundations','Kanban','Gestão Estratégica de TI','NR 10']]]},contact:{k:'COMUNICAÇÃO',t:'Contato',h:'<p>Aberto a networking, parcerias e oportunidades em automação, IA aplicada e Power Platform.</p><div class="links"><a href="mailto:vinny00510@gmail.com">E-mail ↗</a><a href="https://www.linkedin.com/in/vinicius-alvarez-591999383/" target="_blank">LinkedIn ↗</a><a href="https://github.com/vinny00510" target="_blank">GitHub ↗</a></div>'}};
-const modal=document.querySelector('#modal'),content=document.querySelector('#content');function tags(a){return '<div class="tags">'+a.map(x=>'<span>'+x+'</span>').join('')+'</div>'}function open(id){let x=D[id];document.querySelector('#kick').textContent=x.k;document.querySelector('#title').textContent=x.t;if(x.h)content.innerHTML=x.h;else if(x.i)content.innerHTML='<div class="cards">'+x.i.map(a=>'<article class="card"><small>'+a[0]+'</small><h3>'+a[1]+'</h3><h4>'+a[2]+'</h4><p>'+a[3]+'</p></article>').join('')+'</div>';else content.innerHTML=x.g.map(g=>'<section class="group"><h3>'+g[0]+'</h3>'+tags(g[1])+'</section>').join('');document.body.classList.add('open');setTimeout(()=>modal.classList.add('show'),220)}document.querySelector('#solar').onclick=e=>{let b=e.target.closest('[data-id]');if(b)open(b.dataset.id)};function close(){modal.classList.remove('show');setTimeout(()=>document.body.classList.remove('open'),350)}document.querySelector('#close').onclick=close;addEventListener('keydown',e=>{if(e.key==='Escape')close()});const c=document.querySelector('#stars'),ctx=c.getContext('2d');let s=[];function resize(){let r=Math.min(devicePixelRatio||1,2);c.width=innerWidth*r;c.height=innerHeight*r;c.style.width=innerWidth+'px';c.style.height=innerHeight+'px';ctx.setTransform(r,0,0,r,0,0);s=Array.from({length:Math.min(330,innerWidth*innerHeight/3800)},()=>({x:Math.random()*innerWidth,y:Math.random()*innerHeight,r:Math.random()*1.4+.2,a:Math.random()*.8+.2,v:Math.random()*.05+.01}))}function draw(){ctx.clearRect(0,0,innerWidth,innerHeight);ctx.fillStyle='#fff';s.forEach(o=>{o.y+=o.v;if(o.y>innerHeight)o.y=0;ctx.globalAlpha=o.a;ctx.beginPath();ctx.arc(o.x,o.y,o.r,0,7);ctx.fill()});ctx.globalAlpha=1;requestAnimationFrame(draw)}resize();draw();addEventListener('resize',resize);
-</script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículo interativo de Vinicius Alvarez, especialista em automação, inteligência artificial e eficiência operacional.">
+  <meta name="theme-color" content="#030712">
+  <title>Vinicius Alvarez Currículo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="starfield" aria-hidden="true"></canvas>
+  <div class="nebula" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir para o início">
+      <span class="brand-dot"></span>
+      Vinicius Alvarez Currículo
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Abrir menu">☰</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="#universo">Universo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">PORTFÓLIO INTERATIVO • AUTOMAÇÃO • IA</p>
+        <h1>Vinicius <span>Alvarez</span></h1>
+        <h2>Especialista em Automação, IA e Eficiência Operacional</h2>
+        <p class="hero-text">Profissional de Tecnologia da Informação com mais de 15 anos de experiência, criando soluções práticas com Python, Power Platform, Microsoft 365 e Inteligência Artificial.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#universo">Explorar universo</a>
+          <a class="button button-secondary" href="mailto:vinny00510@gmail.com?subject=Contato%20via%20portfolio">Entrar em contato</a>
+        </div>
+        <div class="hero-links" aria-label="Links profissionais">
+          <a href="https://github.com/vinny00510" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/vinicius-alvarez-591999383/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="astronaut-card">
+          <span class="signal"></span>
+          <p>SISTEMAS ONLINE</p>
+          <strong>Transformando processos em soluções inteligentes.</strong>
+          <div class="code-lines"><i></i><i></i><i></i><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="universo" class="universe-section section-shell">
+      <div class="section-heading reveal">
+        <p class="eyebrow">NAVEGAÇÃO ORBITAL</p>
+        <h2>Explore meu universo profissional</h2>
+        <p>Clique em um planeta para acessar cada área do currículo.</p>
+      </div>
+
+      <div class="solar-wrap reveal">
+        <div class="solar-system" aria-label="Sistema solar de navegação">
+          <button class="sun celestial" type="button" data-target="sobre" aria-label="Abrir seção Sobre">
+            <span class="sun-core"></span><b>Sobre</b>
+          </button>
+          <div class="orbit orbit-1"><button class="planet mercury" type="button" data-target="experiencia" aria-label="Abrir Experiência"><b>Experiência</b></button></div>
+          <div class="orbit orbit-2"><button class="planet venus" type="button" data-target="habilidades" aria-label="Abrir Habilidades"><b>Skills</b></button></div>
+          <div class="orbit orbit-3"><button class="planet earth" type="button" data-target="projetos" aria-label="Abrir Projetos"><span class="moon"></span><b>Projetos</b></button></div>
+          <div class="orbit orbit-4"><button class="planet mars" type="button" data-target="formacao" aria-label="Abrir Formação"><b>Formação</b></button></div>
+          <div class="orbit orbit-5"><button class="planet jupiter" type="button" data-target="certificacoes" aria-label="Abrir Certificações"><b>Certificações</b></button></div>
+          <div class="orbit orbit-6"><button class="planet saturn" type="button" data-target="contato" aria-label="Abrir Contato"><span class="ring"></span><b>Contato</b></button></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="content-section section-shell reveal">
+      <div class="section-index">01</div>
+      <div class="section-heading"><p class="eyebrow">SOBRE MIM</p><h2>Tecnologia aplicada a problemas reais</h2></div>
+      <div class="glass-grid two-columns">
+        <article class="glass-card large-card">
+          <p>Sou um profissional de Tecnologia da Informação com mais de <strong>15 anos de experiência</strong> em ambientes corporativos, suporte avançado, governança, gestão de serviços e evolução de processos.</p>
+          <p>Minha atuação combina <strong>análise de processos, Python, Power Platform, Microsoft 365 e Inteligência Artificial</strong> para reduzir esforço manual, organizar informações e entregar soluções práticas para o negócio.</p>
+          <p>Tenho perfil analítico, visão de melhoria contínua e facilidade para transformar operações manuais em ferramentas simples, documentadas e escaláveis.</p>
+        </article>
+        <aside class="glass-card stats-card">
+          <div><strong>15+</strong><span>anos em TI</span></div>
+          <div><strong>IA</strong><span>aplicada a processos</span></div>
+          <div><strong>Python</strong><span>automações reais</span></div>
+          <div><strong>M365</strong><span>ecossistema corporativo</span></div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="experiencia" class="content-section section-shell reveal">
+      <div class="section-index">02</div>
+      <div class="section-heading"><p class="eyebrow">TRAJETÓRIA</p><h2>Experiência profissional</h2></div>
+      <div id="experience-list" class="timeline"></div>
+    </section>
+
+    <section id="habilidades" class="content-section section-shell reveal">
+      <div class="section-index">03</div>
+      <div class="section-heading"><p class="eyebrow">TECNOLOGIAS</p><h2>Competências</h2></div>
+      <div id="skills-list" class="skills-groups"></div>
+    </section>
+
+    <section id="projetos" class="content-section section-shell reveal">
+      <div class="section-index">04</div>
+      <div class="section-heading"><p class="eyebrow">MISSÕES</p><h2>Projetos selecionados</h2><p>Para incluir um novo projeto, edite apenas o arquivo <code>data.js</code>.</p></div>
+      <div id="projects-list" class="projects-grid"></div>
+    </section>
+
+    <section id="formacao" class="content-section section-shell reveal">
+      <div class="section-index">05</div>
+      <div class="section-heading"><p class="eyebrow">FORMAÇÃO</p><h2>Base acadêmica</h2></div>
+      <div id="education-list" class="glass-grid two-columns"></div>
+    </section>
+
+    <section id="certificacoes" class="content-section section-shell reveal">
+      <div class="section-index">06</div>
+      <div class="section-heading"><p class="eyebrow">CERTIFICAÇÕES</p><h2>Aprendizado contínuo</h2></div>
+      <div id="certifications-list" class="tag-cloud"></div>
+    </section>
+
+    <section id="contato" class="contact-section section-shell reveal">
+      <div class="contact-card">
+        <p class="eyebrow">CONTATO</p>
+        <h2>Vamos construir algo inteligente?</h2>
+        <p>Estou aberto a networking, parcerias e oportunidades relacionadas a automação, IA aplicada, Power Platform e melhoria de processos.</p>
+        <div class="contact-actions">
+          <a class="button button-primary" href="mailto:vinny00510@gmail.com?subject=Contato%20via%20portfolio">Enviar e-mail</a>
+          <a class="button button-secondary" href="https://www.linkedin.com/in/vinicius-alvarez-591999383/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="button button-secondary" href="https://github.com/vinny00510" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© <span id="year"></span> Vinicius Alvarez Currículo • Desenvolvido como uma experiência espacial interativa.</p></footer>
+  <button id="back-to-top" type="button" aria-label="Voltar ao topo">↑</button>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
